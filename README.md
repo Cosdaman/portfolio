@@ -4,12 +4,6 @@
 
 ## Technologies Used  
 
-- Webpacks
-- Node
-- Express
-- Babel
-- Workbox
-
 ## Contact Information  
 
 Feel free to reach out, you can reach me through:  
