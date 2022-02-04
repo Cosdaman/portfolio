@@ -1,0 +1,17 @@
+:root {
+    --lightcolor: #054978;
+    --darkcolor: #3a3682;
+    --darkcolor2: #313146;
+    --headerColors: #a5a5a5;
+}
+
+.profilePhoto {
+    object-fit: scale-down;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 10px solid var(--darkcolor);
+}
+
+#about{
+    justify-content: center;
+}

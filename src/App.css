@@ -1,0 +1,15 @@
+:root {
+    --lightcolor: #054978;
+    --darkcolor: #3a3682;
+    --darkcolor2: #313146;
+    --headerColors: #a5a5a5;
+}
+
+#root {
+    background: var(--darkcolor2);
+    color: whitesmoke
+}
+
+html{
+    background: var(--darkcolor2);
+}
