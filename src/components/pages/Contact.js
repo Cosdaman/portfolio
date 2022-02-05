@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Portfolio() {
+export default function Contact() {
   return (
     <section>
-        portfolio
+        contact
     </section>
   );
 }

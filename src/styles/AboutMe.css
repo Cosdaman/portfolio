@@ -15,3 +15,12 @@
 #about{
     justify-content: center;
 }
+
+.skills{
+    height: 15vh;
+    flex-direction: column;
+}
+
+.skills > li {
+    width: fit-content
+}

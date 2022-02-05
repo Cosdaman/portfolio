@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/NavbarComp.css';
+import resume from '../files/resume.pdf'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 
 
@@ -12,18 +13,16 @@ export default function NavbarComp(props) {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#about">Kevin Ang</Navbar.Brand>
+        <Navbar.Brand>Kevin Ang</Navbar.Brand>
         <Nav className="me-auto"
           activeKey={props.currentPage}
           onSelect={select}>
           <Nav.Link href="#about">About Me</Nav.Link>
           <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-          <Nav.Link href="#pricing">Contact</Nav.Link>
+          <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Resume</Nav.Link>
-          <Nav.Link href="#features">LinkedIn</Nav.Link>
-          <Nav.Link href="#pricing">Github</Nav.Link>
+          <Nav.Link href={resume} target='_blank' active='false'>Resume</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

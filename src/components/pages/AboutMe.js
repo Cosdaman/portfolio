@@ -5,6 +5,10 @@ import '../../styles/AboutMe.css'
 
 
 export default function AboutMe() {
+
+  const skills = ['Python', 'Git', 'Java', 'MySQL', 'Javascript', 'MongoDB', 'ExpressJS', 'React', 'NodeJS']
+  const skillList = skills.map((element) => <li>{element}</li>)
+
   return (
     <Container className='pt-2'>
       <Row>
@@ -23,14 +27,9 @@ export default function AboutMe() {
         </p>
         <p> I'm currently undergoing a course to earn a certificate in full stack web development with newly acquired
           and developing skills in the MERN stack; in addition to existing knowledge and skills in the following: </p>
-        <div>
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>mySQL</li>
-            <li>GIT</li>
-          </ul>
-        </div>
+        <Row className='skills'>
+          {skillList}
+        </Row>
         <p>People usually know me as a leader, shot-caller, and passionate problem-solver within a team.</p>
         <p>Each project that I am involved with is aimed to have innovative, and effective solutions towards
           problems at hand.</p>
