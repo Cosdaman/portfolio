@@ -10,8 +10,8 @@ export default function Footer() {
         <Navbar bg="dark" variant="dark">
           <Container className='justify-content-center'>
             <Nav className="ml-auto">
-              <Nav.Link href="#features">LinkedIn</Nav.Link>
-              <Nav.Link href="#pricing">Github</Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/kevin-jc-ang/" target='_blank'>LinkedIn</Nav.Link>
+              <Nav.Link href="https://github.com/Cosdaman" target='_blank'>Github</Nav.Link>
             </Nav>
           </Container>
         </Navbar>

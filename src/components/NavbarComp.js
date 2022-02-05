@@ -13,7 +13,7 @@ export default function NavbarComp(props) {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand>Kevin Ang</Navbar.Brand>
+        <Navbar.Brand className='brand'>Kevin Ang</Navbar.Brand>
         <Nav className="me-auto"
           activeKey={props.currentPage}
           onSelect={select}>

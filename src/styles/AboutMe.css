@@ -3,6 +3,7 @@
     --darkcolor: #3a3682;
     --darkcolor2: #313146;
     --headerColors: #a5a5a5;
+    cursor: default;
 }
 
 .profilePhoto {
@@ -22,5 +23,5 @@
 }
 
 .skills > li {
-    width: fit-content
+    width: fit-content;
 }
