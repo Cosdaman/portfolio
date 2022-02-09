@@ -7,7 +7,7 @@ import '../../styles/AboutMe.css'
 export default function AboutMe() {
 
   const skills = ['Python', 'Git', 'Java', 'MySQL', 'Javascript', 'MongoDB', 'ExpressJS', 'React', 'NodeJS']
-  const skillList = skills.map((element) => <li>{element}</li>)
+  const skillList = skills.map((element, i) => <li key={i}>{element}</li>)
 
   return (
     <Container className='pt-2'>
