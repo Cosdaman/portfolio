@@ -5,7 +5,7 @@ import Contact from './pages/Contact';
 import NavbarComp from './NavbarComp';
 
 export default function Section() {
-
+  document.title =`Cosdaman`;
   const [currentPage, setCurrentPage] = useState('#about');
   const renderPage = () => {
     if (currentPage === '#about') {

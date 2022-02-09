@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card } from 'react-bootstrap'
+import { Button, Card, Row } from 'react-bootstrap'
 
 export default function ProjectCard(props) {
 
     return (
-        <section className={`${props.projects.type}`} style={{width: 'fit-content', margin: 'auto'}}  >
+        <section className={`${props.projects.type}`} style={{ width: 'fit-content', margin: 'auto' }}  >
             <Card className="bg-dark text-white" style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>{props.projects.name}</Card.Title>
@@ -12,8 +12,10 @@ export default function ProjectCard(props) {
                     <Card.Text>
                         {props.projects.description}
                     </Card.Text>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Row>
+                        <Button href="#">Card Link</Button>
+                        <Button href="#">Another Link</Button>
+                    </Row>
                 </Card.Body>
             </Card>
         </section>
