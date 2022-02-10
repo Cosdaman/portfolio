@@ -7,7 +7,7 @@ const projects = [
   {
     type: 'featured',
     name: 'Joint Effort',
-    description: "This application will assist users in choosing a cannabis dispensary and a food truck near one another so that they can pick up both in a fast and efficient manner.",
+    description: "This application assists users in choosing a cannabis dispensary and a food truck near one another so that they can pick up both in a fast and efficient manner.",
     screenshotLink: 'https://raw.githubusercontent.com/mteubnerfoster/project-2-electric-boogaloo/main/public/assets/photos/jointefforthomepage.jpg',
     repoLink: 'https://github.com/mteubnerfoster/project-2-electric-boogaloo',
     liveLink: 'https://joint-effort-kohmm.herokuapp.com/',

@@ -15,7 +15,7 @@ export default function AboutMe() {
         <Col>
           <img className="profilePhoto d-block mx-auto" src={avatar} alt="avatar" />
         </Col>
-        <Col>
+        <Col className='d-flex flex-column align-items-center' style={{ textAlign: 'center' }}>
           <p>Hi there! My name is Kevin! </p>
           <p>You found my webpage! You'll find all sorts of stuff about me here!</p>
           <p>Let me tell you a bit about myself.</p>

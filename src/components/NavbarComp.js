@@ -18,7 +18,7 @@ export default function NavbarComp(props) {
           activeKey={props.currentPage}
           onSelect={select}>
           <Nav.Link href="#about">About Me</Nav.Link>
-          <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
         <Nav className="ml-auto">

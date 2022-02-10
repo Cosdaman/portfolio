@@ -11,7 +11,7 @@ export default function Section() {
     if (currentPage === '#about') {
       return <AboutMe />;
     }
-    if (currentPage === '#portfolio') {
+    if (currentPage === '#projects') {
       return <Portfolio />;
     }
     if (currentPage === '#contact') {
