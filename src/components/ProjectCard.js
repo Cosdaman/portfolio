@@ -6,7 +6,7 @@ export default function ProjectCard(props) {
 
     return (
         <section className={`${props.projects.type}`} style={{ width: 'fit-content', margin: 'auto' }}  >
-            <Card className="bg-dark text-white mb-1" style={{ width: '18rem' }}>
+            <Card className="bg-dark text-white mb-1" style={{ width: '20rem', maxHeight: '20%' }}>
                 <Card.Body>
                     <Card.Title>{props.projects.name}</Card.Title>
                     <Card.Img variant="top" src={props.projects.screenshotLink} />
