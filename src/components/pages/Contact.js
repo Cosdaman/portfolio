@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Container } from 'react-bootstrap'
+import '../../styles/Contact.css'
 
 function validateEmail(email) {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -19,6 +21,11 @@ export default function Contact() {
 
     if (inputType === 'email') {
       setEmail(inputValue);
+      if (!validateEmail(email)) {
+        setErrorMessage('Email is invalid');
+      } else {
+        setErrorMessage('');
+      }
     } else if (inputType === 'userName') {
       setUserName(inputValue);
     } else {
@@ -28,44 +35,52 @@ export default function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !userName) {
       setErrorMessage('Email or username is invalid');
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!userName || !message) {
+      setErrorMessage('All fields are required.');
+      return;
     }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
     setMessage('');
     setEmail('');
+    setErrorMessage('Successfully submitted form.');
   };
 
   return (
-    <section>
+    <Container className='d-flex flex-column mt-2 justify-content-center align-items-center'>
+      <h1>Contact Me</h1>
+      <p>This page is a WIP for contacting me.</p>
+      <p>In the meantime, feel free to contact me through the following:</p>
+      <p>E-mail: <a href="mailto:kjc.ang@gmail.com">kjc.ang@gmail.com</a></p>
       <form className="form">
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="E-mail"
         />
+        <br></br>
         <input
           value={userName}
           name="userName"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
+          placeholder="Username"
         />
-        <input
+        <br></br>
+        <textarea
           value={message}
           name="message"
           onChange={handleInputChange}
           type="text"
           placeholder="Message"
         />
+        <br></br>
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
@@ -73,7 +88,7 @@ export default function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
-    </section>
+    </Container>
   );
 }
 
