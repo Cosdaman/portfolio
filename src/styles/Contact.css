@@ -1,0 +1,17 @@
+
+
+.inputBoxes{
+    width:75% !important;
+    margin-bottom: 1vh;
+    border-radius: 5px;
+}
+
+.message{
+    width: 100% !important;
+    height: 20vh;
+    border-radius: 5px;
+}
+
+.form{
+    width: 50%
+}

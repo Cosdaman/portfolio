@@ -57,7 +57,7 @@ export default function Contact() {
       <p>In the meantime, feel free to contact me through the following:</p>
       <p>E-mail: <a href="mailto:kjc.ang@gmail.com">kjc.ang@gmail.com</a></p>
       <form className="form">
-        <input
+        <input className='inputBoxes'
           value={email}
           name="email"
           onChange={handleInputChange}
@@ -65,7 +65,7 @@ export default function Contact() {
           placeholder="E-mail"
         />
         <br></br>
-        <input
+        <input className='inputBoxes'
           value={userName}
           name="userName"
           onChange={handleInputChange}
@@ -73,7 +73,7 @@ export default function Contact() {
           placeholder="Username"
         />
         <br></br>
-        <textarea
+        <textarea className='message'
           value={message}
           name="message"
           onChange={handleInputChange}
