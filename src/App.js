@@ -7,10 +7,14 @@ import './App.css'
 
 function App() {
   return (
-    <div>
-      <Section />
-      <Footer />
-    </div>
+    <React.StrictMode>
+      <div>
+
+        <Section />
+        <Footer />
+
+      </div>
+    </React.StrictMode>
   );
 }
 

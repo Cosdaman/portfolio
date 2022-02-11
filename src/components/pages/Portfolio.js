@@ -59,7 +59,7 @@ export default function Portfolio() {
 
   let projOutput = projects.map((ele) => {
     return (
-      <ProjectCard projects={ele} />
+      <ProjectCard projects={ele} key={ele.name} />
     )
   })
 
