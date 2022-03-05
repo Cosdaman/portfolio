@@ -6,6 +6,14 @@ import '../../styles/Portfolio.css'
 const projects = [
   {
     type: 'featured',
+    name: 'Fluffr: Find Your Furever Friend',
+    description: "This app will assist users in finding their perfect rescue pet, in a similar style to the popular dating app Tinder.",
+    screenshotLink: 'https://raw.githubusercontent.com/mteubnerfoster/fluffr/main/client/public/fluffr-landing.jpg',
+    repoLink: 'https://github.com/mteubnerfoster/fluffr',
+    liveLink: 'https://fluffr.herokuapp.com/',
+  },
+  {
+    type: 'Normal',
     name: 'Joint Effort',
     description: "This application assists users in choosing a cannabis dispensary and a food truck near one another so that they can pick up both in a fast and efficient manner.",
     screenshotLink: 'https://raw.githubusercontent.com/mteubnerfoster/project-2-electric-boogaloo/main/public/assets/photos/jointefforthomepage.jpg',
