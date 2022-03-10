@@ -25,8 +25,7 @@ export default function AboutMe() {
         <h1 id='about'>About Me</h1>
         <p>I have a Bachelors of Science in Computer Engineering from De La Salle University in the Philippines, and a Diploma in Business IT Management from the British Columbia Institute of Technology in Vancouver, Canada.
         </p>
-        <p> I'm currently undergoing a course to earn a certificate in full stack web development with newly acquired
-          and developing skills in the MERN stack; in addition to existing knowledge and skills in the following: </p>
+        <p> I've also graduated from a full stack web development bootcamp and I'm currently improving my skills in the MERN stack; in addition to existing knowledge and skills in the following: </p>
         <Row className='skills'>
           {skillList}
         </Row>
